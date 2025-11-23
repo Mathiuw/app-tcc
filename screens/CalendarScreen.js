@@ -19,8 +19,8 @@ const calendarStack = createNativeStackNavigator();
 
 const CalendarStackScreen = () => {
   return (
-    <calendarStack.Navigator initialRouteName="Calendario" screenOptions={{headerShown: false}}>
-      <calendarStack.Screen name="Calendario" component={CalendarScreen} />
+    <calendarStack.Navigator initialRouteName="TelaCalendario" screenOptions={{headerShown: false}}>
+      <calendarStack.Screen name="TelaCalendario" component={CalendarScreen} />
       <calendarStack.Screen name="Criar Tarefa" component={TaskInput} />
       <calendarStack.Screen name="Editar Tarefa" component={TaskEdit} />
     </calendarStack.Navigator>
@@ -55,7 +55,7 @@ const CalendarScreen = ({navigation}) => {
 
   const onTaskLongPress = (id) => {
     console.log(`Task long-pressed: id=${id}`);
-    navigation.navigate("Editar Tarefa", { taskId: id, backScreen: "Calendario" });
+    navigation.navigate("Editar Tarefa", { taskId: id, backScreen: "TelaCalendario" });
   }
 
   return (

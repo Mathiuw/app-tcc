@@ -6,7 +6,7 @@ const HelpScreen = () => {
         <SafeAreaView style={localStyles.helpScreenView}>
             <ScrollView>
                 <Text style={[localStyles.text, localStyles.title]}>1. Qual o propósito do aplicativo?</Text>
-                <Text style={[localStyles.text, {}]}>R: O propósito do app Taskia é de auxiliar universitários com TDAH a otimizar suas rotinas e maximizar suas experiência na fase mais marcante de suas vidas.</Text>
+                <Text style={[localStyles.text, {}]}>R: O propósito do app AjudAI é de auxiliar universitários com TDAH a otimizar suas rotinas e maximizar suas experiência na fase mais marcante de suas vidas.</Text>
 
                 <Text style={[localStyles.text, localStyles.title]}>2. Posso conversar com a IA sobre qualquer assunto?</Text>
                 <Text style={[localStyles.text, {marginBottom: 20}]}>R: Não, a IA foi direcionada para responder questões apenas de cunho acadêmico</Text>
